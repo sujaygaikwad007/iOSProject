@@ -1,0 +1,6 @@
+framework module Pods_speechRecongizer {
+  umbrella header "Pods-speechRecongizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,24 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ldc-vf-l75">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="speechRecongizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-V8-tJ1">
+                                <rect key="frame" x="139" y="150.5" width="137" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="UEC-fB-Hef"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ1-0v-7VV">
+                                <rect key="frame" x="10" y="284" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.001414195714" green="0.27377070209999999" blue="0.64270478490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4bM-2F-wkY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Speech Recognizer">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openMicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjG-gl-b5y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IQ1-0v-7VV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="7hI-D4-Jt2"/>
+                            <constraint firstItem="IQ1-0v-7VV" firstAttribute="top" secondItem="Tvz-V8-tJ1" secondAttribute="bottom" constant="45" id="WbE-ha-YZz"/>
+                            <constraint firstItem="Tvz-V8-tJ1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="YLr-ia-oFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tvz-V8-tJ1" secondAttribute="trailing" constant="138" id="Ypw-6e-pMw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IQ1-0v-7VV" secondAttribute="trailing" constant="10" id="qOa-Fz-agU"/>
+                            <constraint firstItem="Tvz-V8-tJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="z3Z-L1-C1c"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Vsq-ag-2ZJ"/>
+                    <connections>
+                        <outlet property="micImage" destination="Tvz-V8-tJ1" id="K5H-w0-N7e"/>
+                        <outlet property="myButton" destination="IQ1-0v-7VV" id="P7w-aJ-tll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="78.348214285714278"/>
+        </scene>
+        <!--Speech Recongizer-->
+        <scene sceneID="Qnw-iS-K5F">
+            <objects>
+                <viewController storyboardIdentifier="speechRecongizer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DKj-QS-oUx" customClass="speechRecongizer" customModule="speechRecongizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ipu-55-qUH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-SV-Vjj" userLabel="Search Bar">
+                                <rect key="frame" x="10" y="54" width="394" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XL6-qI-t6d">
+                                        <rect key="frame" x="0.0" y="0.0" width="341" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="341" id="qfo-s4-SxD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mND-XK-CQA">
+                                        <rect key="frame" x="346" y="0.0" width="48" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="gdH-X5-DHx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="searchBtnAction:" destination="DKj-QS-oUx" eventType="touchUpInside" id="CzW-p0-swP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mND-XK-CQA" firstAttribute="leading" secondItem="XL6-qI-t6d" secondAttribute="trailing" constant="5" id="VqP-eJ-jvs"/>
+                                    <constraint firstAttribute="height" constant="50" id="li7-3U-J6b"/>
+                                    <constraint firstItem="XL6-qI-t6d" firstAttribute="leading" secondItem="e7l-SV-Vjj" secondAttribute="leading" id="u2u-m3-K2C"/>
+                                </constraints>
+                            </stackView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rak-oW-adO">
+                                <rect key="frame" x="0.0" y="191" width="414" height="671"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-Ol-yIU">
+                                <rect key="frame" x="10" y="131" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.00060797564219999996" green="0.2731044292" blue="0.6425423026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HEm-CW-Dna"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startStopBtn:" destination="DKj-QS-oUx" eventType="touchUpInside" id="PzY-wv-fr8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cFA-G0-n6R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rak-oW-adO" firstAttribute="bottom" secondItem="cFA-G0-n6R" secondAttribute="bottom" id="9W9-Bx-DBY"/>
+                            <constraint firstItem="cFA-G0-n6R" firstAttribute="trailing" secondItem="e7l-SV-Vjj" secondAttribute="trailing" constant="10" id="CUj-92-Egp"/>
+                            <constraint firstItem="fXv-Ol-yIU" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" constant="10" id="MVG-Es-HDp"/>
+                            <constraint firstItem="rak-oW-adO" firstAttribute="trailing" secondItem="cFA-G0-n6R" secondAttribute="trailing" id="Pwx-HX-vmI"/>
+                            <constraint firstItem="cFA-G0-n6R" firstAttribute="trailing" secondItem="fXv-Ol-yIU" secondAttribute="trailing" constant="10" id="Rqk-Mx-rVy"/>
+                            <constraint firstItem="e7l-SV-Vjj" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" constant="10" id="cDI-So-Rdg"/>
+                            <constraint firstItem="fXv-Ol-yIU" firstAttribute="top" secondItem="e7l-SV-Vjj" secondAttribute="bottom" constant="27" id="gvk-FQ-CfW"/>
+                            <constraint firstItem="rak-oW-adO" firstAttribute="top" secondItem="fXv-Ol-yIU" secondAttribute="bottom" constant="20" id="iBz-Ct-44n"/>
+                            <constraint firstItem="rak-oW-adO" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" id="l68-7R-0H2"/>
+                            <constraint firstItem="e7l-SV-Vjj" firstAttribute="top" secondItem="cFA-G0-n6R" secondAttribute="top" constant="10" id="oGg-f0-L3q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBtn" destination="mND-XK-CQA" id="Xlm-hp-Dgz"/>
+                        <outlet property="searchTextField" destination="XL6-qI-t6d" id="48n-hC-wO0"/>
+                        <outlet property="startStopBtn" destination="fXv-Ol-yIU" id="RrS-eQ-XUH"/>
+                        <outlet property="webView" destination="rak-oW-adO" id="BdB-xc-0uR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vby-np-Xyz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.7971014492755" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Co-C2-Kg3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ldc-vf-l75" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rx0-91-JCm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lcF-49-ACN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMm-w5-Mz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mic.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

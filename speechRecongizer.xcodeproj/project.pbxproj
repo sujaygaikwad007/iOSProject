@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144A4C690DB5DD8BBE6D1953 /* Pods_speechRecongizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BF2F19D8D5E99974228CA5 /* Pods_speechRecongizer.framework */; };
 		1F3DA0C62B1D9270005645D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DA0C52B1D9270005645D8 /* AppDelegate.swift */; };
 		1F3DA0C82B1D9270005645D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DA0C72B1D9270005645D8 /* SceneDelegate.swift */; };
 		1F3DA0CA2B1D9270005645D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DA0C92B1D9270005645D8 /* ViewController.swift */; };
 		1F3DA0CD2B1D9270005645D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DA0CB2B1D9270005645D8 /* Main.storyboard */; };
 		1F3DA0CF2B1D9272005645D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DA0CE2B1D9272005645D8 /* Assets.xcassets */; };
 		1F3DA0D22B1D9272005645D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DA0D02B1D9272005645D8 /* LaunchScreen.storyboard */; };
+		1FE57C9C2B1DA6AA007F3943 /* speechRecongizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE57C9B2B1DA6AA007F3943 /* speechRecongizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		1F3DA0CE2B1D9272005645D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3DA0D12B1D9272005645D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3DA0D32B1D9272005645D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE57C9B2B1DA6AA007F3943 /* speechRecongizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechRecongizer.swift; sourceTree = "<group>"; };
+		28F7F06D0FBA9C5820436735 /* Pods-speechRecongizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechRecongizer.debug.xcconfig"; path = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer.debug.xcconfig"; sourceTree = "<group>"; };
+		45BF2F19D8D5E99974228CA5 /* Pods_speechRecongizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechRecongizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E02E75E0967BCB2C98D026 /* Pods-speechRecongizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechRecongizer.release.xcconfig"; path = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144A4C690DB5DD8BBE6D1953 /* Pods_speechRecongizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				1F3DA0C42B1D9270005645D8 /* speechRecongizer */,
 				1F3DA0C32B1D9270005645D8 /* Products */,
+				4876A0B730212584578D3ABD /* Pods */,
+				89F0FCD98A7E7E7B7DCD4B37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +69,29 @@
 				1F3DA0C72B1D9270005645D8 /* SceneDelegate.swift */,
 				1F3DA0C92B1D9270005645D8 /* ViewController.swift */,
 				1F3DA0CB2B1D9270005645D8 /* Main.storyboard */,
+				1FE57C9B2B1DA6AA007F3943 /* speechRecongizer.swift */,
 				1F3DA0CE2B1D9272005645D8 /* Assets.xcassets */,
 				1F3DA0D02B1D9272005645D8 /* LaunchScreen.storyboard */,
 				1F3DA0D32B1D9272005645D8 /* Info.plist */,
 			);
 			path = speechRecongizer;
+			sourceTree = "<group>";
+		};
+		4876A0B730212584578D3ABD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28F7F06D0FBA9C5820436735 /* Pods-speechRecongizer.debug.xcconfig */,
+				E6E02E75E0967BCB2C98D026 /* Pods-speechRecongizer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89F0FCD98A7E7E7B7DCD4B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45BF2F19D8D5E99974228CA5 /* Pods_speechRecongizer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3DA0D62B1D9272005645D8 /* Build configuration list for PBXNativeTarget "speechRecongizer" */;
 			buildPhases = (
+				A65CE9E3C746C851B52BA03B /* [CP] Check Pods Manifest.lock */,
 				1F3DA0BE2B1D9270005645D8 /* Sources */,
 				1F3DA0BF2B1D9270005645D8 /* Frameworks */,
 				1F3DA0C02B1D9270005645D8 /* Resources */,
+				AAB0E73FDC7F37E5ED000001 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A65CE9E3C746C851B52BA03B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-speechRecongizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB0E73FDC7F37E5ED000001 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F3DA0BE2B1D9270005645D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1F3DA0CA2B1D9270005645D8 /* ViewController.swift in Sources */,
+				1FE57C9C2B1DA6AA007F3943 /* speechRecongizer.swift in Sources */,
 				1F3DA0C62B1D9270005645D8 /* AppDelegate.swift in Sources */,
 				1F3DA0C82B1D9270005645D8 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +356,7 @@
 		};
 		1F3DA0D72B1D9272005645D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F7F06D0FBA9C5820436735 /* Pods-speechRecongizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +365,9 @@
 				DEVELOPMENT_TEAM = D6F9YM7FN3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = speechRecongizer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Audio;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access ";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Please allow access ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,6 +388,7 @@
 		};
 		1F3DA0D82B1D9272005645D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E02E75E0967BCB2C98D026 /* Pods-speechRecongizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,6 +397,9 @@
 				DEVELOPMENT_TEAM = D6F9YM7FN3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = speechRecongizer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Audio;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access ";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Please allow access ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
