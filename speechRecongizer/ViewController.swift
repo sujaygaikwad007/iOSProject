@@ -27,7 +27,13 @@ class ViewController: UIViewController {
     }
     
     
-
+    @IBAction func textSpeechBtn(_ sender: UIButton) {
+        
+        let textToSpeechVC = storyboard?.instantiateViewController(withIdentifier: "textSpeech") as! textSpeech
+        self.navigationController?.pushViewController(textToSpeechVC, animated: true)
+        
+    }
+    
     
   /*  func OpenMic(){
     voiceOverlay.start(on: self, textHandler: { text, final, _ in
