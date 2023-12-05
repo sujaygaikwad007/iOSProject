@@ -7,90 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D7465D17C307357036DB240313A3344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		19E0D995D7C1A4A73FDBF5626A75AC23 /* Pods-speechRecongizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B2F81F0077A291B3F2EFD9EB371ADA /* Pods-speechRecongizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21AE10D00992DB40CB73A31864B43EAD /* VoiceOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D3980015F6238FD122ADF13552CD6 /* VoiceOverlayController.swift */; };
-		2F3DD307F2EEB76D2D9EA0F30BCD5A4A /* PermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DFD96E0B6EEFFB638E30FDE58B99B /* PermissionController.swift */; };
-		36150899F496FD20911570360B423549 /* InstantSearchVoiceOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4CE741D762F691BF42AB99377FE3FC /* InstantSearchVoiceOverlay-dummy.m */; };
-		424EB94BBFA3A97A94793874115BF523 /* siri_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 558CA1AD0F05689331ADA28E283BD93F /* siri_start.mp3 */; };
-		4990357689879DCFEC2DFABDA5543AEA /* VoiceOverlayPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EECB3DE06F88F17FE26FE5F0B4AB2C /* VoiceOverlayPackage.swift */; };
-		4BF1615DDA8F4C8E533F9EABE1BAF618 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD4186F1F15649FC77E51A314EE3A91 /* ResultViewController.swift */; };
-		4EDDC1FAEE011C9F5D1AB9C38EACC55F /* InstantSearchVoiceOverlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC84B8E847A5E8369438024ED7CA6CD /* InstantSearchVoiceOverlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21AE10D00992DB40CB73A31864B43EAD /* VoiceOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF65A7B86647604034D063DE6F1358E /* VoiceOverlayController.swift */; };
+		2F3DD307F2EEB76D2D9EA0F30BCD5A4A /* PermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB04451C7F5B1A99536C9A25B1A29222 /* PermissionController.swift */; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		36150899F496FD20911570360B423549 /* InstantSearchVoiceOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB9854E25217A34BC5F60E35F1D1C /* InstantSearchVoiceOverlay-dummy.m */; };
+		3C63C405BC3B1438DD33E87204989A9B /* Pods-speechRecongizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B625ED8F0A0352784740D6CEDE65B736 /* Pods-speechRecongizer-dummy.m */; };
+		424EB94BBFA3A97A94793874115BF523 /* siri_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E59250073E7DA49357B37EBB9AA88291 /* siri_start.mp3 */; };
+		4990357689879DCFEC2DFABDA5543AEA /* VoiceOverlayPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828A48C29629601DDC7A5DD6E03E4C2A /* VoiceOverlayPackage.swift */; };
+		4BF1615DDA8F4C8E533F9EABE1BAF618 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099FA0B463C0BAF668777918541E5914 /* ResultViewController.swift */; };
+		4EDDC1FAEE011C9F5D1AB9C38EACC55F /* InstantSearchVoiceOverlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133611C9E686CD99810C07DE88590922 /* InstantSearchVoiceOverlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD736E9EBDAA9ECD73286C40423940E /* DropDown+Appearance.swift */; };
+		5D675C6B3AC985221903EF3AF25C6991 /* Pods-speechRecongizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B2F81F0077A291B3F2EFD9EB371ADA /* Pods-speechRecongizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67745B0DB04C9808C71726334685C1CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		713F13C8DF5E2E86320A1A2DCBB8FC10 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1EE55F34E601FDF740E787A975BCC /* Recordable.swift */; };
-		749E8A6DF7317BA967676D2F98151CAB /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166B62C49DB6236A4FC5E68EE83D9AD /* RecordingViewController.swift */; };
-		869BF589E4C75673915DB95E8C9A4F8C /* AutoLayoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713CD3BEA3DBA28389913616D94EDBC3 /* AutoLayoutHelpers.swift */; };
-		A3C75CE279D67760EB60711ECA93AF90 /* Pods-speechRecongizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B625ED8F0A0352784740D6CEDE65B736 /* Pods-speechRecongizer-dummy.m */; };
-		A65D51D04D880EE9122FA0287B2EA026 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB75FEEFB295D3C4D809DB70A5D6C7 /* Constant.swift */; };
-		AF3A29E67E34282D50D7DC97742D5243 /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113B8F00A4CC024F57B76E8BA8E10AA /* CloseView.swift */; };
-		BA1AFC0A9203F0E87C321FE204C11F12 /* MicrophonePermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B350806A265177DD131E0CDE66144 /* MicrophonePermissionController.swift */; };
-		BC152B478B694588EB28350029A2617B /* AllowPermissionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A9EC1722617E668250F4F44CA5088 /* AllowPermissionButton.swift */; };
-		BE67F42865862718E42A19D22FA2233B /* SpeechRecognitionPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C5C1A22A8C7166E38695C126A8D29 /* SpeechRecognitionPermissionController.swift */; };
-		C4435593B5ECBDE56CC3F5D5D6C990C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DECFFA47D4898AE1512DC7BB3D595E /* Assets.xcassets */; };
-		C46C1116AA0E15E6FCE33D096F010C3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B8885C5461029381EB29D607F85B0 /* Extensions.swift */; };
-		C79028A35996D001576898825A855A9C /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF7FE1EAD0A54B8F00DDB879E712 /* SpeechController.swift */; };
-		C90F6CC0D0E8441E62E9B140A888BF75 /* siri_error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7C4724338095EDDECBBBF1FFE671307 /* siri_error.mp3 */; };
-		D8AC6E738E4E3FA7E729B4B84D333F6C /* RecordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EB25838230F6FD6650BB452FE2BB5 /* RecordingButton.swift */; };
-		DB98BEE4B060CA1D7589E2C0B4CC03BF /* NoPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012E6DBDF8A5ED9EDD750F120512178 /* NoPermissionViewController.swift */; };
-		EA15CA6E08F706CCD958B5EEBBD75C90 /* siri_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88122E317EB7575A4EB55DF442C726E2 /* siri_end.mp3 */; };
-		FE3528054D192AEEF224A8747C9FDBF9 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A99096E4B017CE7CE37843FC66FCC2 /* PermissionViewController.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182F9257DF68A6F07464F92D1B68AAB1 /* DropDownCell.xib */; };
+		713F13C8DF5E2E86320A1A2DCBB8FC10 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB21BE5EC900B2AA2947B381CCC0FAD /* Recordable.swift */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A70B85C22D9AF98054C50311CCF662 /* DPDConstants.swift */; };
+		749E8A6DF7317BA967676D2F98151CAB /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FF7A7745D599A3FD050CA8215F1B /* RecordingViewController.swift */; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6A8DBE5A3A1EE08BEF3F325E1C62A1 /* DropDown.swift */; };
+		869BF589E4C75673915DB95E8C9A4F8C /* AutoLayoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC1C6E252F1B49F1D205D39A27B869 /* AutoLayoutHelpers.swift */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3719319EDB6BBE1E297E8DC93959CC3 /* DPDKeyboardListener.swift */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7780AC1F4B4AE6FC155363541FF512B1 /* DropDown-dummy.m */; };
+		A65D51D04D880EE9122FA0287B2EA026 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB526BBEA9EF87C6BCB727A5498D4801 /* Constant.swift */; };
+		AF3A29E67E34282D50D7DC97742D5243 /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016595633A72F4FA4B737DA8D090FA6 /* CloseView.swift */; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7108A58BC123388F6A8D7BFCAC8E90B /* DPDUIView+Extension.swift */; };
+		BA1AFC0A9203F0E87C321FE204C11F12 /* MicrophonePermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070B087E50CE4D61B378C16B0D01E25 /* MicrophonePermissionController.swift */; };
+		BC152B478B694588EB28350029A2617B /* AllowPermissionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB817DDAB81E980BA0027A32876FB03 /* AllowPermissionButton.swift */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112FCA2F049859F5882FF4451D1ECF3 /* DropDownCell.swift */; };
+		BE67F42865862718E42A19D22FA2233B /* SpeechRecognitionPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847C4B8B243065CCCCEFA939697849C /* SpeechRecognitionPermissionController.swift */; };
+		C4435593B5ECBDE56CC3F5D5D6C990C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B5A647B12459970A53B46FC46219E7 /* Assets.xcassets */; };
+		C46C1116AA0E15E6FCE33D096F010C3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8CF4F73E7E2CFD13F7F6AF2FDA93E /* Extensions.swift */; };
+		C79028A35996D001576898825A855A9C /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0D01817797E5FD0E0A553C633C58C /* SpeechController.swift */; };
+		C90F6CC0D0E8441E62E9B140A888BF75 /* siri_error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60C8A54DD3F1CCA2147DE6FB8B6BD454 /* siri_error.mp3 */; };
+		D8AC6E738E4E3FA7E729B4B84D333F6C /* RecordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE944870E00D3301502BE274874F0616 /* RecordingButton.swift */; };
+		DB98BEE4B060CA1D7589E2C0B4CC03BF /* NoPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56523C0AA0AB88A37F2505FAC9497D1 /* NoPermissionViewController.swift */; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CAA3F61ACFFB45FED8BC2726ADC8FA8 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E995FC305224F9243C49BA4E9297FA71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EA15CA6E08F706CCD958B5EEBBD75C90 /* siri_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 258562F136841BC4418E4025E5A92EA4 /* siri_end.mp3 */; };
+		FE3528054D192AEEF224A8747C9FDBF9 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB41288ED27C30FB044DA887F2FF8F7A /* PermissionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		90A372960E26D8896D025B7AEBDAE610 /* PBXContainerItemProxy */ = {
+		389997A476D7D6DD68E450F8BAB2002F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3A186D5E4FEF43A5AF44DB305B59EC1F;
 			remoteInfo = InstantSearchVoiceOverlay;
 		};
+		69F4EDF7D06253591419EC98FFDECB86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007DFD96E0B6EEFFB638E30FDE58B99B /* PermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Protocols/PermissionController.swift; sourceTree = "<group>"; };
 		05E4F628FA9F14E03D140098246A4CC6 /* Pods-speechRecongizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-speechRecongizer.debug.xcconfig"; sourceTree = "<group>"; };
-		0B3B350806A265177DD131E0CDE66144 /* MicrophonePermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MicrophonePermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/Permission/MicrophonePermissionController.swift; sourceTree = "<group>"; };
+		099FA0B463C0BAF668777918541E5914 /* ResultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/ResultViewController.swift; sourceTree = "<group>"; };
 		0B5CCC28C463EFB5726CBF503EF3358F /* Pods-speechRecongizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-speechRecongizer.release.xcconfig"; sourceTree = "<group>"; };
-		0C7B8885C5461029381EB29D607F85B0 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/Extensions.swift; sourceTree = "<group>"; };
-		113B4F8296F500A88980264815A732E0 /* InstantSearchVoiceOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InstantSearchVoiceOverlay.modulemap; sourceTree = "<group>"; };
-		12B0FF7FE1EAD0A54B8F00DDB879E712 /* SpeechController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/SpeechController.swift; sourceTree = "<group>"; };
-		20A99096E4B017CE7CE37843FC66FCC2 /* PermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/PermissionViewController.swift; sourceTree = "<group>"; };
-		22EECB3DE06F88F17FE26FE5F0B4AB2C /* VoiceOverlayPackage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceOverlayPackage.swift; path = Sources/InstantSearchVoiceOverlay/VoiceOverlayPackage.swift; sourceTree = "<group>"; };
-		2BC84B8E847A5E8369438024ED7CA6CD /* InstantSearchVoiceOverlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantSearchVoiceOverlay-umbrella.h"; sourceTree = "<group>"; };
-		4166B62C49DB6236A4FC5E68EE83D9AD /* RecordingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/RecordingViewController.swift; sourceTree = "<group>"; };
-		49DECFFA47D4898AE1512DC7BB3D595E /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/InstantSearchVoiceOverlay/Views/Assets.xcassets; sourceTree = "<group>"; };
+		133611C9E686CD99810C07DE88590922 /* InstantSearchVoiceOverlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantSearchVoiceOverlay-umbrella.h"; sourceTree = "<group>"; };
+		16B5E91C7DCDD253EF8239CDCAED9648 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		182F9257DF68A6F07464F92D1B68AAB1 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		1CAA3F61ACFFB45FED8BC2726ADC8FA8 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		1EFA89D9C141FAE07D2B559D2849E24A /* InstantSearchVoiceOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantSearchVoiceOverlay-prefix.pch"; sourceTree = "<group>"; };
+		2016595633A72F4FA4B737DA8D090FA6 /* CloseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseView.swift; path = Sources/InstantSearchVoiceOverlay/Views/CloseView.swift; sourceTree = "<group>"; };
+		222D6DD8C738D7EEAEB2A434D7A2E46E /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		258562F136841BC4418E4025E5A92EA4 /* siri_end.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_end.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_end.mp3; sourceTree = "<group>"; };
+		2847C4B8B243065CCCCEFA939697849C /* SpeechRecognitionPermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionPermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/Permission/SpeechRecognitionPermissionController.swift; sourceTree = "<group>"; };
+		2CA4FF7A7745D599A3FD050CA8215F1B /* RecordingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/RecordingViewController.swift; sourceTree = "<group>"; };
+		32DC1C6E252F1B49F1D205D39A27B869 /* AutoLayoutHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoLayoutHelpers.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/AutoLayoutHelpers.swift; sourceTree = "<group>"; };
+		3E8AB03D3D630806788D4A6610C09DA0 /* InstantSearchVoiceOverlay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InstantSearchVoiceOverlay-Info.plist"; sourceTree = "<group>"; };
+		44E4BBE7EBA9DC58303613E816EF00FB /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
 		4B5595CCE82657511F561614B3A78496 /* Pods-speechRecongizer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-speechRecongizer-acknowledgements.plist"; sourceTree = "<group>"; };
-		558CA1AD0F05689331ADA28E283BD93F /* siri_start.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_start.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_start.mp3; sourceTree = "<group>"; };
-		5F669754CA69F851A47915CAB3E5C45F /* InstantSearchVoiceOverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantSearchVoiceOverlay.release.xcconfig; sourceTree = "<group>"; };
-		6633DF7970A9717632D6E3958390E191 /* InstantSearchVoiceOverlay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InstantSearchVoiceOverlay-Info.plist"; sourceTree = "<group>"; };
-		6DD4186F1F15649FC77E51A314EE3A91 /* ResultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/ResultViewController.swift; sourceTree = "<group>"; };
-		713CD3BEA3DBA28389913616D94EDBC3 /* AutoLayoutHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoLayoutHelpers.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/AutoLayoutHelpers.swift; sourceTree = "<group>"; };
+		4DE8CF4F73E7E2CFD13F7F6AF2FDA93E /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/Extensions.swift; sourceTree = "<group>"; };
+		5CF65A7B86647604034D063DE6F1358E /* VoiceOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceOverlayController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/VoiceOverlayController.swift; sourceTree = "<group>"; };
+		60C8A54DD3F1CCA2147DE6FB8B6BD454 /* siri_error.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_error.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_error.mp3; sourceTree = "<group>"; };
+		66945F155CC119B37A31915EA7F3BBAE /* InstantSearchVoiceOverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantSearchVoiceOverlay.release.xcconfig; sourceTree = "<group>"; };
+		6A86FA49261F1804D2630E71F3BCC587 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		6C6A8DBE5A3A1EE08BEF3F325E1C62A1 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		783A9EC1722617E668250F4F44CA5088 /* AllowPermissionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllowPermissionButton.swift; path = Sources/InstantSearchVoiceOverlay/Views/AllowPermissionButton.swift; sourceTree = "<group>"; };
-		8012E6DBDF8A5ED9EDD750F120512178 /* NoPermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPermissionViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/NoPermissionViewController.swift; sourceTree = "<group>"; };
-		82DD9B481BA9486825288ECD4AA8C2A4 /* InstantSearchVoiceOverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantSearchVoiceOverlay.debug.xcconfig; sourceTree = "<group>"; };
-		870EB25838230F6FD6650BB452FE2BB5 /* RecordingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingButton.swift; path = Sources/InstantSearchVoiceOverlay/Views/RecordingButton.swift; sourceTree = "<group>"; };
-		88122E317EB7575A4EB55DF442C726E2 /* siri_end.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_end.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_end.mp3; sourceTree = "<group>"; };
-		8DB7E05E363415EF6B6DBD4C90FB07C1 /* InstantSearchVoiceOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantSearchVoiceOverlay-prefix.pch"; sourceTree = "<group>"; };
-		902C5C1A22A8C7166E38695C126A8D29 /* SpeechRecognitionPermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionPermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/Permission/SpeechRecognitionPermissionController.swift; sourceTree = "<group>"; };
-		9113B8F00A4CC024F57B76E8BA8E10AA /* CloseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseView.swift; path = Sources/InstantSearchVoiceOverlay/Views/CloseView.swift; sourceTree = "<group>"; };
-		9AD1EE55F34E601FDF740E787A975BCC /* Recordable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recordable.swift; path = Sources/InstantSearchVoiceOverlay/Protocols/Recordable.swift; sourceTree = "<group>"; };
-		9C4CE741D762F691BF42AB99377FE3FC /* InstantSearchVoiceOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InstantSearchVoiceOverlay-dummy.m"; sourceTree = "<group>"; };
+		7780AC1F4B4AE6FC155363541FF512B1 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		7A6BB9854E25217A34BC5F60E35F1D1C /* InstantSearchVoiceOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InstantSearchVoiceOverlay-dummy.m"; sourceTree = "<group>"; };
+		8070B087E50CE4D61B378C16B0D01E25 /* MicrophonePermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MicrophonePermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/Permission/MicrophonePermissionController.swift; sourceTree = "<group>"; };
+		828A48C29629601DDC7A5DD6E03E4C2A /* VoiceOverlayPackage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceOverlayPackage.swift; path = Sources/InstantSearchVoiceOverlay/VoiceOverlayPackage.swift; sourceTree = "<group>"; };
+		87A70B85C22D9AF98054C50311CCF662 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		90B5A647B12459970A53B46FC46219E7 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/InstantSearchVoiceOverlay/Views/Assets.xcassets; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F5312715B33F22759CFBBC0D5E93A38 /* Pods-speechRecongizer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-speechRecongizer-Info.plist"; sourceTree = "<group>"; };
 		A7B2F81F0077A291B3F2EFD9EB371ADA /* Pods-speechRecongizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-speechRecongizer-umbrella.h"; sourceTree = "<group>"; };
+		AAB817DDAB81E980BA0027A32876FB03 /* AllowPermissionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllowPermissionButton.swift; path = Sources/InstantSearchVoiceOverlay/Views/AllowPermissionButton.swift; sourceTree = "<group>"; };
+		AB04451C7F5B1A99536C9A25B1A29222 /* PermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Protocols/PermissionController.swift; sourceTree = "<group>"; };
 		B625ED8F0A0352784740D6CEDE65B736 /* Pods-speechRecongizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-speechRecongizer-dummy.m"; sourceTree = "<group>"; };
-		C5BB75FEEFB295D3C4D809DB70A5D6C7 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/Constant.swift; sourceTree = "<group>"; };
-		C7C4724338095EDDECBBBF1FFE671307 /* siri_error.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_error.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_error.mp3; sourceTree = "<group>"; };
+		BA298FF06E988861DB29D05EED5C237C /* InstantSearchVoiceOverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantSearchVoiceOverlay.debug.xcconfig; sourceTree = "<group>"; };
+		BB41288ED27C30FB044DA887F2FF8F7A /* PermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/PermissionViewController.swift; sourceTree = "<group>"; };
+		BE944870E00D3301502BE274874F0616 /* RecordingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingButton.swift; path = Sources/InstantSearchVoiceOverlay/Views/RecordingButton.swift; sourceTree = "<group>"; };
+		C56523C0AA0AB88A37F2505FAC9497D1 /* NoPermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPermissionViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/NoPermissionViewController.swift; sourceTree = "<group>"; };
+		C7108A58BC123388F6A8D7BFCAC8E90B /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		C824CB8FD5DB5C403E342DB6E8CF2E27 /* Pods-speechRecongizer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-speechRecongizer-frameworks.sh"; sourceTree = "<group>"; };
 		C906FF0017ACE692189192383B875D74 /* InstantSearchVoiceOverlay */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InstantSearchVoiceOverlay; path = InstantSearchVoiceOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C926673AFC007667C279EA752C3BF760 /* Pods-speechRecongizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-speechRecongizer.modulemap"; sourceTree = "<group>"; };
 		CEE4FF93EC98BD401B1C40C3683025DB /* Pods-speechRecongizer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-speechRecongizer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DE2D3980015F6238FD122ADF13552CD6 /* VoiceOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceOverlayController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/VoiceOverlayController.swift; sourceTree = "<group>"; };
+		CFD736E9EBDAA9ECD73286C40423940E /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		D3719319EDB6BBE1E297E8DC93959CC3 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		DFDF309E438F84A8C085C4D76AC0EAAF /* InstantSearchVoiceOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InstantSearchVoiceOverlay.modulemap; sourceTree = "<group>"; };
+		E112FCA2F049859F5882FF4451D1ECF3 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		E59250073E7DA49357B37EBB9AA88291 /* siri_start.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_start.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_start.mp3; sourceTree = "<group>"; };
 		E9D8ACA35B01BCA122A6F77C24953B58 /* Pods-speechRecongizer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-speechRecongizer"; path = Pods_speechRecongizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB526BBEA9EF87C6BCB727A5498D4801 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/Constant.swift; sourceTree = "<group>"; };
+		F0E0D01817797E5FD0E0A553C633C58C /* SpeechController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/SpeechController.swift; sourceTree = "<group>"; };
+		F80D60D076C753CE28885700D03F8B1B /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		FBB21BE5EC900B2AA2947B381CCC0FAD /* Recordable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recordable.swift; path = Sources/InstantSearchVoiceOverlay/Protocols/Recordable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		616F1C4C0200139525FE63EAF0FFA29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E995FC305224F9243C49BA4E9297FA71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AAD5BD8ABB7E0768BF61ECE9E105C42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,26 +147,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F65E10A76D83973F5F1951D0F5B0E308 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D7465D17C307357036DB240313A3344 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43977E34DE8F264F277AD6C29DDBC242 /* Resources */ = {
+		11D19C5942883D25DCCA345EC46A75BA /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
-				49DECFFA47D4898AE1512DC7BB3D595E /* Assets.xcassets */,
-				88122E317EB7575A4EB55DF442C726E2 /* siri_end.mp3 */,
-				C7C4724338095EDDECBBBF1FFE671307 /* siri_error.mp3 */,
-				558CA1AD0F05689331ADA28E283BD93F /* siri_start.mp3 */,
+				87A70B85C22D9AF98054C50311CCF662 /* DPDConstants.swift */,
+				D3719319EDB6BBE1E297E8DC93959CC3 /* DPDKeyboardListener.swift */,
+				C7108A58BC123388F6A8D7BFCAC8E90B /* DPDUIView+Extension.swift */,
+				6C6A8DBE5A3A1EE08BEF3F325E1C62A1 /* DropDown.swift */,
+				CFD736E9EBDAA9ECD73286C40423940E /* DropDown+Appearance.swift */,
+				E112FCA2F049859F5882FF4451D1ECF3 /* DropDownCell.swift */,
+				EB98FF76F89E48B00B7C3DB76C63B2AF /* Resources */,
+				4AFC8224DC8A878086C8715F8F25B7C9 /* Support Files */,
 			);
-			name = Resources;
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		4AFC8224DC8A878086C8715F8F25B7C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44E4BBE7EBA9DC58303613E816EF00FB /* DropDown.modulemap */,
+				7780AC1F4B4AE6FC155363541FF512B1 /* DropDown-dummy.m */,
+				F80D60D076C753CE28885700D03F8B1B /* DropDown-Info.plist */,
+				222D6DD8C738D7EEAEB2A434D7A2E46E /* DropDown-prefix.pch */,
+				1CAA3F61ACFFB45FED8BC2726ADC8FA8 /* DropDown-umbrella.h */,
+				16B5E91C7DCDD253EF8239CDCAED9648 /* DropDown.debug.xcconfig */,
+				6A86FA49261F1804D2630E71F3BCC587 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -129,19 +189,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		662F5F45B5F840B70DE3FD2A20A152F3 /* Support Files */ = {
+		6933D3BD9D90F2C48325B53F7F228541 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				113B4F8296F500A88980264815A732E0 /* InstantSearchVoiceOverlay.modulemap */,
-				9C4CE741D762F691BF42AB99377FE3FC /* InstantSearchVoiceOverlay-dummy.m */,
-				6633DF7970A9717632D6E3958390E191 /* InstantSearchVoiceOverlay-Info.plist */,
-				8DB7E05E363415EF6B6DBD4C90FB07C1 /* InstantSearchVoiceOverlay-prefix.pch */,
-				2BC84B8E847A5E8369438024ED7CA6CD /* InstantSearchVoiceOverlay-umbrella.h */,
-				82DD9B481BA9486825288ECD4AA8C2A4 /* InstantSearchVoiceOverlay.debug.xcconfig */,
-				5F669754CA69F851A47915CAB3E5C45F /* InstantSearchVoiceOverlay.release.xcconfig */,
+				90B5A647B12459970A53B46FC46219E7 /* Assets.xcassets */,
+				258562F136841BC4418E4025E5A92EA4 /* siri_end.mp3 */,
+				60C8A54DD3F1CCA2147DE6FB8B6BD454 /* siri_error.mp3 */,
+				E59250073E7DA49357B37EBB9AA88291 /* siri_start.mp3 */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/InstantSearchVoiceOverlay";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		8A41DE57BB24A2BA14F7AFBAA8D4304C /* Targets Support Files */ = {
@@ -150,6 +206,16 @@
 				91548396FECDBC1913F9CB3492BA8409 /* Pods-speechRecongizer */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8A8A08E8D7A092637A4E5B1A24D4C109 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				C906FF0017ACE692189192383B875D74 /* InstantSearchVoiceOverlay */,
+				E9D8ACA35B01BCA122A6F77C24953B58 /* Pods-speechRecongizer */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		91548396FECDBC1913F9CB3492BA8409 /* Pods-speechRecongizer */ = {
@@ -169,13 +235,31 @@
 			path = "Target Support Files/Pods-speechRecongizer";
 			sourceTree = "<group>";
 		};
-		BADB612636B73CAAEBEB33BD92757A19 /* Products */ = {
+		AAEBC16AD86F0BE3939BED1B6F45EA15 /* InstantSearchVoiceOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				C906FF0017ACE692189192383B875D74 /* InstantSearchVoiceOverlay */,
-				E9D8ACA35B01BCA122A6F77C24953B58 /* Pods-speechRecongizer */,
+				AAB817DDAB81E980BA0027A32876FB03 /* AllowPermissionButton.swift */,
+				32DC1C6E252F1B49F1D205D39A27B869 /* AutoLayoutHelpers.swift */,
+				2016595633A72F4FA4B737DA8D090FA6 /* CloseView.swift */,
+				EB526BBEA9EF87C6BCB727A5498D4801 /* Constant.swift */,
+				4DE8CF4F73E7E2CFD13F7F6AF2FDA93E /* Extensions.swift */,
+				8070B087E50CE4D61B378C16B0D01E25 /* MicrophonePermissionController.swift */,
+				C56523C0AA0AB88A37F2505FAC9497D1 /* NoPermissionViewController.swift */,
+				AB04451C7F5B1A99536C9A25B1A29222 /* PermissionController.swift */,
+				BB41288ED27C30FB044DA887F2FF8F7A /* PermissionViewController.swift */,
+				FBB21BE5EC900B2AA2947B381CCC0FAD /* Recordable.swift */,
+				BE944870E00D3301502BE274874F0616 /* RecordingButton.swift */,
+				2CA4FF7A7745D599A3FD050CA8215F1B /* RecordingViewController.swift */,
+				099FA0B463C0BAF668777918541E5914 /* ResultViewController.swift */,
+				F0E0D01817797E5FD0E0A553C633C58C /* SpeechController.swift */,
+				2847C4B8B243065CCCCEFA939697849C /* SpeechRecognitionPermissionController.swift */,
+				5CF65A7B86647604034D063DE6F1358E /* VoiceOverlayController.swift */,
+				828A48C29629601DDC7A5DD6E03E4C2A /* VoiceOverlayPackage.swift */,
+				6933D3BD9D90F2C48325B53F7F228541 /* Resources */,
+				E04983266F3923BCE52B6237E1FCBBBF /* Support Files */,
 			);
-			name = Products;
+			name = InstantSearchVoiceOverlay;
+			path = InstantSearchVoiceOverlay;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -183,8 +267,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E216616929ACEDDABC2C1EB7728237B4 /* Pods */,
-				BADB612636B73CAAEBEB33BD92757A19 /* Products */,
+				F45AEEA8EF966BCD853AE15B183EF157 /* Pods */,
+				8A8A08E8D7A092637A4E5B1A24D4C109 /* Products */,
 				8A41DE57BB24A2BA14F7AFBAA8D4304C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -197,37 +281,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D65F0FF6FE320A5F513F46CE5395FAE4 /* InstantSearchVoiceOverlay */ = {
+		E04983266F3923BCE52B6237E1FCBBBF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				783A9EC1722617E668250F4F44CA5088 /* AllowPermissionButton.swift */,
-				713CD3BEA3DBA28389913616D94EDBC3 /* AutoLayoutHelpers.swift */,
-				9113B8F00A4CC024F57B76E8BA8E10AA /* CloseView.swift */,
-				C5BB75FEEFB295D3C4D809DB70A5D6C7 /* Constant.swift */,
-				0C7B8885C5461029381EB29D607F85B0 /* Extensions.swift */,
-				0B3B350806A265177DD131E0CDE66144 /* MicrophonePermissionController.swift */,
-				8012E6DBDF8A5ED9EDD750F120512178 /* NoPermissionViewController.swift */,
-				007DFD96E0B6EEFFB638E30FDE58B99B /* PermissionController.swift */,
-				20A99096E4B017CE7CE37843FC66FCC2 /* PermissionViewController.swift */,
-				9AD1EE55F34E601FDF740E787A975BCC /* Recordable.swift */,
-				870EB25838230F6FD6650BB452FE2BB5 /* RecordingButton.swift */,
-				4166B62C49DB6236A4FC5E68EE83D9AD /* RecordingViewController.swift */,
-				6DD4186F1F15649FC77E51A314EE3A91 /* ResultViewController.swift */,
-				12B0FF7FE1EAD0A54B8F00DDB879E712 /* SpeechController.swift */,
-				902C5C1A22A8C7166E38695C126A8D29 /* SpeechRecognitionPermissionController.swift */,
-				DE2D3980015F6238FD122ADF13552CD6 /* VoiceOverlayController.swift */,
-				22EECB3DE06F88F17FE26FE5F0B4AB2C /* VoiceOverlayPackage.swift */,
-				43977E34DE8F264F277AD6C29DDBC242 /* Resources */,
-				662F5F45B5F840B70DE3FD2A20A152F3 /* Support Files */,
+				DFDF309E438F84A8C085C4D76AC0EAAF /* InstantSearchVoiceOverlay.modulemap */,
+				7A6BB9854E25217A34BC5F60E35F1D1C /* InstantSearchVoiceOverlay-dummy.m */,
+				3E8AB03D3D630806788D4A6610C09DA0 /* InstantSearchVoiceOverlay-Info.plist */,
+				1EFA89D9C141FAE07D2B559D2849E24A /* InstantSearchVoiceOverlay-prefix.pch */,
+				133611C9E686CD99810C07DE88590922 /* InstantSearchVoiceOverlay-umbrella.h */,
+				BA298FF06E988861DB29D05EED5C237C /* InstantSearchVoiceOverlay.debug.xcconfig */,
+				66945F155CC119B37A31915EA7F3BBAE /* InstantSearchVoiceOverlay.release.xcconfig */,
 			);
-			name = InstantSearchVoiceOverlay;
-			path = InstantSearchVoiceOverlay;
+			name = "Support Files";
+			path = "../Target Support Files/InstantSearchVoiceOverlay";
 			sourceTree = "<group>";
 		};
-		E216616929ACEDDABC2C1EB7728237B4 /* Pods */ = {
+		EB98FF76F89E48B00B7C3DB76C63B2AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D65F0FF6FE320A5F513F46CE5395FAE4 /* InstantSearchVoiceOverlay */,
+				182F9257DF68A6F07464F92D1B68AAB1 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F45AEEA8EF966BCD853AE15B183EF157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11D19C5942883D25DCCA345EC46A75BA /* DropDown */,
+				AAEBC16AD86F0BE3939BED1B6F45EA15 /* InstantSearchVoiceOverlay */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -235,11 +316,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4E0BB0F76B79D3E6A1EBBED0952BC966 /* Headers */ = {
+		39B3D7F8DF23AEFF52FAC275D4E4AB08 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E0D995D7C1A4A73FDBF5626A75AC23 /* Pods-speechRecongizer-umbrella.h in Headers */,
+				5D675C6B3AC985221903EF3AF25C6991 /* Pods-speechRecongizer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EDDC1FAEE011C9F5D1AB9C38EACC55F /* InstantSearchVoiceOverlay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CE91431E229797751455423C79CA4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,21 +363,40 @@
 		};
 		631A5D2B190782E5EFE1CCB399D92069 /* Pods-speechRecongizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA9C6010EE494EF73F713A7DA62382F2 /* Build configuration list for PBXNativeTarget "Pods-speechRecongizer" */;
+			buildConfigurationList = 9C783A1E4AEE2FCDCFDE42161E2CEC2E /* Build configuration list for PBXNativeTarget "Pods-speechRecongizer" */;
 			buildPhases = (
-				4E0BB0F76B79D3E6A1EBBED0952BC966 /* Headers */,
-				4C7876CE6A6A47BA576523C2666C164B /* Sources */,
-				F65E10A76D83973F5F1951D0F5B0E308 /* Frameworks */,
-				DC0F5A1CB84B6039CE5DD603320E685A /* Resources */,
+				39B3D7F8DF23AEFF52FAC275D4E4AB08 /* Headers */,
+				D84C42964933D6BC12FE4274EBDC87FE /* Sources */,
+				616F1C4C0200139525FE63EAF0FFA29C /* Frameworks */,
+				4F827B647D3435A5A7057ECAD9191AD3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F083003C0693EDFE106A3AF728EDAA9C /* PBXTargetDependency */,
+				F71294A5B00B2C122888AB475E2DA919 /* PBXTargetDependency */,
+				6135D4D04814191F3DBB5F25F18550C4 /* PBXTargetDependency */,
 			);
 			name = "Pods-speechRecongizer";
 			productName = Pods_speechRecongizer;
 			productReference = E9D8ACA35B01BCA122A6F77C24953B58 /* Pods-speechRecongizer */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				97CE91431E229797751455423C79CA4F /* Headers */,
+				48864C435B3DB37698CF568C638CF98F /* Sources */,
+				808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */,
+				EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,10 +417,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BADB612636B73CAAEBEB33BD92757A19 /* Products */;
+			productRefGroup = 8A8A08E8D7A092637A4E5B1A24D4C109 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				3A186D5E4FEF43A5AF44DB305B59EC1F /* InstantSearchVoiceOverlay */,
 				631A5D2B190782E5EFE1CCB399D92069 /* Pods-speechRecongizer */,
 			);
@@ -320,6 +429,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F827B647D3435A5A7057ECAD9191AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE6448F5B222401719631E161951D5E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,21 +447,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC0F5A1CB84B6039CE5DD603320E685A /* Resources */ = {
+		EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C7876CE6A6A47BA576523C2666C164B /* Sources */ = {
+		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C75CE279D67760EB60711ECA93AF90 /* Pods-speechRecongizer-dummy.m in Sources */,
+				74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */,
+				89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */,
+				B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */,
+				84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */,
+				515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */,
+				907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */,
+				BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,21 +497,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D84C42964933D6BC12FE4274EBDC87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C63C405BC3B1438DD33E87204989A9B /* Pods-speechRecongizer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F083003C0693EDFE106A3AF728EDAA9C /* PBXTargetDependency */ = {
+		6135D4D04814191F3DBB5F25F18550C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = InstantSearchVoiceOverlay;
 			target = 3A186D5E4FEF43A5AF44DB305B59EC1F /* InstantSearchVoiceOverlay */;
-			targetProxy = 90A372960E26D8896D025B7AEBDAE610 /* PBXContainerItemProxy */;
+			targetProxy = 389997A476D7D6DD68E450F8BAB2002F /* PBXContainerItemProxy */;
+		};
+		F71294A5B00B2C122888AB475E2DA919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 69F4EDF7D06253591419EC98FFDECB86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3A778A54312517139A3858ABACE6898E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82DD9B481BA9486825288ECD4AA8C2A4 /* InstantSearchVoiceOverlay.debug.xcconfig */;
+			baseConfigurationReference = BA298FF06E988861DB29D05EED5C237C /* InstantSearchVoiceOverlay.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -415,43 +552,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7E866E62F86C76D9B04EF7FB29900992 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05E4F628FA9F14E03D140098246A4CC6 /* Pods-speechRecongizer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -586,7 +686,112 @@
 			};
 			name = Release;
 		};
-		99816335C69B7C4EF796749EDCD879FE /* Release */ = {
+		C24518E891FAA59668669823639498EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A86FA49261F1804D2630E71F3BCC587 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4A9086F919930EF6A6A86C9820A1335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66945F155CC119B37A31915EA7F3BBAE /* InstantSearchVoiceOverlay.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay.modulemap";
+				PRODUCT_MODULE_NAME = InstantSearchVoiceOverlay;
+				PRODUCT_NAME = InstantSearchVoiceOverlay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B5E91C7DCDD253EF8239CDCAED9648 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBBBF73170C18CDE5A4BCA84B5B8BE55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B5CCC28C463EFB5726CBF503EF3358F /* Pods-speechRecongizer.release.xcconfig */;
 			buildSettings = {
@@ -624,10 +829,11 @@
 			};
 			name = Release;
 		};
-		C4A9086F919930EF6A6A86C9820A1335 /* Release */ = {
+		FC526034A72AF1112979335E65AE2CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F669754CA69F851A47915CAB3E5C45F /* InstantSearchVoiceOverlay.release.xcconfig */;
+			baseConfigurationReference = 05E4F628FA9F14E03D140098246A4CC6 /* Pods-speechRecongizer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -637,28 +843,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay.modulemap";
-				PRODUCT_MODULE_NAME = InstantSearchVoiceOverlay;
-				PRODUCT_NAME = InstantSearchVoiceOverlay;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -681,11 +887,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA9C6010EE494EF73F713A7DA62382F2 /* Build configuration list for PBXNativeTarget "Pods-speechRecongizer" */ = {
+		53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E866E62F86C76D9B04EF7FB29900992 /* Debug */,
-				99816335C69B7C4EF796749EDCD879FE /* Release */,
+				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
+				C24518E891FAA59668669823639498EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C783A1E4AEE2FCDCFDE42161E2CEC2E /* Build configuration list for PBXNativeTarget "Pods-speechRecongizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC526034A72AF1112979335E65AE2CDB /* Debug */,
+				FBBBF73170C18CDE5A4BCA84B5B8BE55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

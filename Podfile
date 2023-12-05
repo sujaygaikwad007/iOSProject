@@ -7,5 +7,6 @@ target 'speechRecongizer' do
 
   # Pods for speechRecongizer
   pod 'InstantSearchVoiceOverlay'
+  pod 'DropDown'
 
 end

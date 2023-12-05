@@ -1,57 +1,66 @@
 
 import UIKit
 import AVFoundation
+import DropDown
 
 class textSpeech: UIViewController, AVSpeechSynthesizerDelegate  {
-
-    @IBOutlet weak var languagePicker: UIPickerView!
+    
+    @IBOutlet weak var uiViewMenu: UIView!
     @IBOutlet weak var textDataTable: UITableView!
-    
     @IBOutlet weak var selectLanguage: UIButton!
+    @IBOutlet weak var dispLangLbl: UILabel!
     
+    
+    
+    let dropDown = DropDown()
     let speechSythesizer = AVSpeechSynthesizer()
+    var selectedLangCode : String?
     
-    let language = ["en-US", "es-ES", "fr-FR", "de-DE","hi-IN","zh-CN","ja-JP","ru-RU","th-TH"]
-    
-    
-    
-    let tableData = ["I'm not really a TV watcher.",
-                     "I'm not a big fan of snacking.",
-                     "George works on a small farm.",
-                     "I don’t like tea.",
-                     "It's so hot.","Thank you"]
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         speechSythesizer.delegate = self
-        languagePicker.delegate = self
-        languagePicker.dataSource = self
         textDataTable.dataSource = self
         textDataTable.delegate = self
-        
-        languagePicker.isHidden = true
-        
         textDataTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-
-
-     
+        
+        
+        
     }
     
     
     @IBAction func selectLangBtn(_ sender: UIButton) {
         
-        languagePicker.isHidden = false
+        dropDownMenu()
+        
+    }
+    
+    func dropDownMenu(){
+        
+        dropDown.dataSource = ["en-US", "es-ES", "fr-FR", "de-DE","hi-IN","zh-CN","ja-JP","ru-RU","th-TH"]
+        dropDown.anchorView = uiViewMenu
+        dropDown.bottomOffset = CGPoint(x: 0, y: uiViewMenu.frame.size.height)
+        dropDown.show()
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+            print("Selected Item:---- \(item) at index:---- \(index)")
+            self.selectedLangCode = item
+            
+        }
         
         
     }
     
-    func speakText(_ text: String, languageCode: String){
+    func speakText(_ text: String){
         
-        guard let voice = AVSpeechSynthesisVoice(language: languageCode) else {
-            print("Voice are not availabel------ \(languageCode)")
-            return
-        }
+        guard let languageCode = selectedLangCode,
+              let voice = AVSpeechSynthesisVoice(language: languageCode) else {
+                  print("Voice are not availabel------ \(selectedLangCode ?? "nil")")
+                  
+                  return
+              }
+        dispLangLbl.text = "Language Selected \(selectedLangCode ?? "nil")"
+        
         let speechUtterance = AVSpeechUtterance(string: text)
         speechUtterance.voice = voice
         speechSythesizer.speak(speechUtterance)
@@ -60,33 +69,9 @@ class textSpeech: UIViewController, AVSpeechSynthesizerDelegate  {
         print("speaking:\(text) in \(languageCode)")
     }
     
-
-}
-
-
-extension textSpeech: UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-        
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return language.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return language[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-      let  selectedValue = language[row]
-        
-            
-        
-        print("slected value:-----\(selectedValue)")
-    }
     
 }
+
 
 extension textSpeech: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,10 +91,7 @@ extension textSpeech: UITableViewDataSource, UITableViewDelegate{
         
         let selectedText = tableData[indexPath.row]
         print("selectedText from table:--- \(selectedText)")
-        let selectedLanguageIndex = languagePicker.selectedRow(inComponent: 0)
-        print("selectedLanguageIndex:----- \(selectedLanguageIndex)")
-        let selectedLanguageCode = language[selectedLanguageIndex]
-        speakText(selectedText, languageCode: selectedLanguageCode)
+        speakText(selectedText)
         
     }
 }
