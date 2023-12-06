@@ -1,13 +1,8 @@
-//
-//  model.swift
-//  speechRecongizer
-//
-//  Created by Aniket Patil on 05/12/23.
-//
 
 import Foundation
 
 let tableData = ["ऑर्डर स्थिति अपडेट कर दी गई है",
+                 "पुस्तक विद्वतापूर्ण लिखी गयी है।",
                  "I'm not really a TV watcher.",
                  "I'm not a big fan of snacking.",
                  "George works on a small farm.",

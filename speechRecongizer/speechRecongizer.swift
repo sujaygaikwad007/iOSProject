@@ -1,5 +1,3 @@
-
-
 import UIKit
 import Speech
 import WebKit
@@ -13,6 +11,7 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchBtn: UIButton!
     
+    @IBOutlet var mainView: UIView!
     
     
     
@@ -26,6 +25,12 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        webView.isHidden = true
+        
+        addGradientBackground()
+    
+        startStopBtn.layer.cornerRadius = 25.0
         
         startStopBtn.isEnabled = false
         speechRecognizer.delegate = self
@@ -125,6 +130,7 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
     
     @IBAction func searchBtnAction(_ sender: UIButton) {
         
+        
         if let seacrhText = searchTextField.text, !seacrhText.isEmpty
         {
             let query = seacrhText.replacingOccurrences(of: " ", with: "+")
@@ -132,8 +138,11 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
             let searchUrlString = "https://www.google.com/search?q=\(query)"
             if let searchUrl = URL(string: searchUrlString)
             {
+                webView.isHidden = false
+
                 let request = URLRequest(url: searchUrl)
                 webView.load(request)
+                
             }
         }
         else{
@@ -163,7 +172,13 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
         }
     }
     
-    
+    func addGradientBackground() {
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = mainView.bounds
+            gradientLayer.colors = [UIColor.systemMint.cgColor, UIColor.systemTeal.cgColor]
+            gradientLayer.locations = [0.3, 1.0]
+            mainView.layer.insertSublayer(gradientLayer, at: 0)
+        }
     
     
     

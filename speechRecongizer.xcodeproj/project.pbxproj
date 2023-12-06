@@ -8,26 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		144A4C690DB5DD8BBE6D1953 /* Pods_speechRecongizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BF2F19D8D5E99974228CA5 /* Pods_speechRecongizer.framework */; };
+		1F19BD522B203878001E9BE1 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19BD512B203878001E9BE1 /* startViewController.swift */; };
 		1F271C5E2B1EE27000ED6202 /* textSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F271C5D2B1EE27000ED6202 /* textSpeech.swift */; };
 		1F3DA0C62B1D9270005645D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DA0C52B1D9270005645D8 /* AppDelegate.swift */; };
 		1F3DA0C82B1D9270005645D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DA0C72B1D9270005645D8 /* SceneDelegate.swift */; };
-		1F3DA0CA2B1D9270005645D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DA0C92B1D9270005645D8 /* ViewController.swift */; };
 		1F3DA0CD2B1D9270005645D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DA0CB2B1D9270005645D8 /* Main.storyboard */; };
 		1F3DA0CF2B1D9272005645D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DA0CE2B1D9272005645D8 /* Assets.xcassets */; };
 		1F3DA0D22B1D9272005645D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DA0D02B1D9272005645D8 /* LaunchScreen.storyboard */; };
+		1F5F3D7B2B208E7F002FAFF2 /* TextSpeechTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F3D792B208E7F002FAFF2 /* TextSpeechTVC.swift */; };
+		1F5F3D7C2B208E7F002FAFF2 /* TextSpeechTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F3D7A2B208E7F002FAFF2 /* TextSpeechTVC.xib */; };
+		1F6B55D32B1F555D001B1581 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B55D22B1F555D001B1581 /* SplashViewController.swift */; };
+		1FD8D74C2B1F3821008EA23F /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8D74B2B1F3821008EA23F /* model.swift */; };
 		1FE57C9C2B1DA6AA007F3943 /* speechRecongizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE57C9B2B1DA6AA007F3943 /* speechRecongizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F19BD512B203878001E9BE1 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		1F271C5D2B1EE27000ED6202 /* textSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textSpeech.swift; sourceTree = "<group>"; };
 		1F3DA0C22B1D9270005645D8 /* speechRecongizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechRecongizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3DA0C52B1D9270005645D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3DA0C72B1D9270005645D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F3DA0C92B1D9270005645D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F3DA0CC2B1D9270005645D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F3DA0CE2B1D9272005645D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3DA0D12B1D9272005645D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3DA0D32B1D9272005645D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5F3D792B208E7F002FAFF2 /* TextSpeechTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechTVC.swift; sourceTree = "<group>"; };
+		1F5F3D7A2B208E7F002FAFF2 /* TextSpeechTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextSpeechTVC.xib; sourceTree = "<group>"; };
+		1F6B55D22B1F555D001B1581 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		1FD8D74B2B1F3821008EA23F /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		1FE57C9B2B1DA6AA007F3943 /* speechRecongizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechRecongizer.swift; sourceTree = "<group>"; };
 		28F7F06D0FBA9C5820436735 /* Pods-speechRecongizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechRecongizer.debug.xcconfig"; path = "Target Support Files/Pods-speechRecongizer/Pods-speechRecongizer.debug.xcconfig"; sourceTree = "<group>"; };
 		45BF2F19D8D5E99974228CA5 /* Pods_speechRecongizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechRecongizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,9 +75,12 @@
 		1F3DA0C42B1D9270005645D8 /* speechRecongizer */ = {
 			isa = PBXGroup;
 			children = (
+				1F5F3D782B208E61002FAFF2 /* Cell */,
 				1F3DA0C52B1D9270005645D8 /* AppDelegate.swift */,
 				1F3DA0C72B1D9270005645D8 /* SceneDelegate.swift */,
-				1F3DA0C92B1D9270005645D8 /* ViewController.swift */,
+				1FD8D74B2B1F3821008EA23F /* model.swift */,
+				1F19BD512B203878001E9BE1 /* startViewController.swift */,
+				1F6B55D22B1F555D001B1581 /* SplashViewController.swift */,
 				1F3DA0CB2B1D9270005645D8 /* Main.storyboard */,
 				1F271C5D2B1EE27000ED6202 /* textSpeech.swift */,
 				1FE57C9B2B1DA6AA007F3943 /* speechRecongizer.swift */,
@@ -78,6 +89,15 @@
 				1F3DA0D32B1D9272005645D8 /* Info.plist */,
 			);
 			path = speechRecongizer;
+			sourceTree = "<group>";
+		};
+		1F5F3D782B208E61002FAFF2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1F5F3D792B208E7F002FAFF2 /* TextSpeechTVC.swift */,
+				1F5F3D7A2B208E7F002FAFF2 /* TextSpeechTVC.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4876A0B730212584578D3ABD /* Pods */ = {
@@ -157,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5F3D7C2B208E7F002FAFF2 /* TextSpeechTVC.xib in Resources */,
 				1F3DA0D22B1D9272005645D8 /* LaunchScreen.storyboard in Resources */,
 				1F3DA0CF2B1D9272005645D8 /* Assets.xcassets in Resources */,
 				1F3DA0CD2B1D9270005645D8 /* Main.storyboard in Resources */,
@@ -212,10 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3DA0CA2B1D9270005645D8 /* ViewController.swift in Sources */,
+				1F5F3D7B2B208E7F002FAFF2 /* TextSpeechTVC.swift in Sources */,
+				1F19BD522B203878001E9BE1 /* startViewController.swift in Sources */,
+				1FD8D74C2B1F3821008EA23F /* model.swift in Sources */,
 				1FE57C9C2B1DA6AA007F3943 /* speechRecongizer.swift in Sources */,
 				1F271C5E2B1EE27000ED6202 /* textSpeech.swift in Sources */,
 				1F3DA0C62B1D9270005645D8 /* AppDelegate.swift in Sources */,
+				1F6B55D32B1F555D001B1581 /* SplashViewController.swift in Sources */,
 				1F3DA0C82B1D9270005645D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
