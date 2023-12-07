@@ -18,13 +18,14 @@ class textSpeech: UIViewController, AVSpeechSynthesizerDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addGradientBackground()
+        addGradientBackground(view: self.mainView)
         
-        
+        textDataTable.backgroundColor = .clear
         speechSythesizer.delegate = self
         textDataTable.dataSource = self
         textDataTable.delegate = self
         textDataTable.register(UINib(nibName: "TextSpeechTVC", bundle: .none), forCellReuseIdentifier: "TextSpeechTVC")
+       
         
         
         selectLanguage.layer.cornerRadius = 20.0
@@ -77,9 +78,9 @@ class textSpeech: UIViewController, AVSpeechSynthesizerDelegate  {
         print("speaking:\(text) in \(languageCode)")
     }
     
-    func addGradientBackground() {
+    func addGradientBackground(view: UIView) {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = mainView.bounds
+        gradientLayer.frame = view.bounds
         gradientLayer.colors = [UIColor.systemMint.cgColor, UIColor.systemTeal.cgColor]
         gradientLayer.locations = [0.3, 1.0]
         mainView.layer.insertSublayer(gradientLayer, at: 0)
@@ -97,8 +98,7 @@ extension textSpeech: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //        let cell = textDataTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        //        cell.textLabel?.text = tableData[indexPath.row]
+        
         
     
         
@@ -106,25 +106,14 @@ extension textSpeech: UITableViewDataSource, UITableViewDelegate{
         cell.lblSpeech.text = tableData[indexPath.row]
         cell.mainView.layer.borderWidth = 1
         cell.mainView.layer.borderColor = UIColor.lightGray.cgColor
-        
-        //cell.layer.cornerRadius = 20
-        
-        
-        //cell.backgroundColor = UIColor.systemCyan
-        //cell.layer.borderWidth = 1
-        // cell.layer.borderColor = UIColor.black.cgColor
-        //cell.clipsToBounds = true
-        
-        let textLabel = UILabel(frame: CGRect(x: 16, y: 8, width: tableView.bounds.width - 32, height: 24))
-        textLabel.font = UIFont.boldSystemFont(ofSize: 14)
-        cell.addSubview(textLabel)
-        
+        cell.mainView.backgroundColor = .white
+        cell.contentView.backgroundColor = UIColor.systemMint
+            
         
         
         
         
         let speakBtn = UIButton(type: .system)
-//        speakBtn.setTitle("Speak", for: .normal)
         speakBtn.setImage(UIImage(systemName: "mic.fill"), for: .normal)
 
         speakBtn.frame = CGRect(x: Int(tableView.bounds.width) - 80, y: 30, width: 64, height: 24)
@@ -156,21 +145,7 @@ extension textSpeech: UITableViewDataSource, UITableViewDelegate{
     
     
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        let selectedText = tableData[indexPath.row]
-//        print("selectedText from table:--- \(selectedText)")
-//        speakText(selectedText)
-//
-//    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
-        cell.selectedBackgroundView = bgColorView
-    }
-    
+
     
     
 }

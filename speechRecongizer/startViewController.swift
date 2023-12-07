@@ -47,26 +47,6 @@ class startViewController : UIViewController {
     }
     
     
-    /*  func OpenMic(){
-     voiceOverlay.start(on: self, textHandler: { text, final, _ in
-     
-     if final {
-     print("Final text: \(text)")
-     }
-     else {
-     print("In progess: \(text)")
-     }
-     
-     }, errorHandler: { error in
-     
-     })
-     } */
-    
-    
-    
-    
-    
-    
     
 }
 
