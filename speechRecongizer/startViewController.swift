@@ -46,7 +46,5 @@ class startViewController : UIViewController {
         mainView.layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    
-    
 }
 

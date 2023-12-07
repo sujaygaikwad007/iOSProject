@@ -6,8 +6,11 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
     
     
     
+    
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var startStopBtn: UIButton!
+    
+    @IBOutlet weak var microphoneBtn: UIButton!
+    @IBOutlet weak var displayMsgLbl: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchBtn: UIButton!
     
@@ -30,9 +33,7 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
         
         addGradientBackground()
     
-        startStopBtn.layer.cornerRadius = 25.0
         
-        startStopBtn.isEnabled = false
         speechRecognizer.delegate = self
         webView.navigationDelegate = self
         
@@ -41,28 +42,39 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
         SFSpeechRecognizer.requestAuthorization { authStatus in
             OperationQueue.main.addOperation {
                 if authStatus == .authorized {
-                    self.startStopBtn.isEnabled = true
+                    self.microphoneBtn.isEnabled = true
                 }
             }
         }
 
     }
-
-    @IBAction func startStopBtn(_ sender: UIButton) {
-        
-        if audioEngine.isRunning {
-            print("stop button clicked------")
+    
+    
+    
+    
+    
+    @IBAction func microphoneBtnTapped(_ sender: Any) {
+        if audioEngine.isRunning{
             audioEngine.stop()
             recognitionRequest?.endAudio()
-            startStopBtn.isEnabled = false
-            startStopBtn.setTitle("Start Recording", for: .normal)
-           
-
         } else {
             startRecording()
-            startStopBtn.setTitle("Stop Recording", for: .normal)
         }
     }
+    
+    func stopRecordingAfterDuration(durationInSeconds: Double){
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + durationInSeconds){
+            
+            if self.audioEngine.isRunning{
+                print("stop recording:--- \(durationInSeconds) seconds")
+                self.audioEngine.stop()
+                self.recognitionRequest?.endAudio()
+                self.displayMsgLbl.text = "Sorry I can't hear anything...try again"
+            }
+        }
+    }
+
     
     func startRecording(){
         if recognitionTask != nil {
@@ -104,7 +116,6 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
                 inputNode.removeTap(onBus: 0)
                 self.recognitionRequest = nil
                 self.recognitionTask = nil
-                self.startStopBtn.isEnabled = true
             }
         
     }
@@ -121,8 +132,12 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
         } catch {
             print("audio engine error: \(error)")
         }
+        
+        stopRecordingAfterDuration(durationInSeconds: 10)
     
-        searchTextField.text = "Say something, I'm listening"
+        displayMsgLbl.text = "Say something, I'm listening"
+        
+        
 }
     
     
@@ -139,9 +154,9 @@ class speechRecongizer: UIViewController, SFSpeechRecognizerDelegate , WKNavigat
             if let searchUrl = URL(string: searchUrlString)
             {
                 webView.isHidden = false
-
                 let request = URLRequest(url: searchUrl)
                 webView.load(request)
+                displayMsgLbl.text = ""
                 
             }
         }

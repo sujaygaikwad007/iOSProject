@@ -130,19 +130,25 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-Ol-yIU">
-                                <rect key="frame" x="10" y="131" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr0-iz-Jmm">
+                                <rect key="frame" x="5" y="114" width="404" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="HEm-CW-Dna"/>
+                                    <constraint firstAttribute="height" constant="50" id="S7V-dV-3Cr"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDp-Og-TSd">
+                                <rect key="frame" x="321" y="69" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3q7-cM-4oO"/>
+                                    <constraint firstAttribute="height" constant="20" id="cem-c2-Hrw"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" image="mic.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="startStopBtn:" destination="DKj-QS-oUx" eventType="touchUpInside" id="PzY-wv-fr8"/>
+                                    <action selector="microphoneBtnTapped:" destination="DKj-QS-oUx" eventType="touchUpInside" id="15Q-Oy-EZ0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,22 +156,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rak-oW-adO" firstAttribute="bottom" secondItem="cFA-G0-n6R" secondAttribute="bottom" id="9W9-Bx-DBY"/>
+                            <constraint firstItem="vDp-Og-TSd" firstAttribute="trailing" secondItem="XL6-qI-t6d" secondAttribute="trailing" constant="-10" id="CKM-tr-7fc"/>
                             <constraint firstItem="cFA-G0-n6R" firstAttribute="trailing" secondItem="e7l-SV-Vjj" secondAttribute="trailing" constant="10" id="CUj-92-Egp"/>
-                            <constraint firstItem="fXv-Ol-yIU" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" constant="10" id="MVG-Es-HDp"/>
                             <constraint firstItem="rak-oW-adO" firstAttribute="trailing" secondItem="cFA-G0-n6R" secondAttribute="trailing" id="Pwx-HX-vmI"/>
-                            <constraint firstItem="cFA-G0-n6R" firstAttribute="trailing" secondItem="fXv-Ol-yIU" secondAttribute="trailing" constant="10" id="Rqk-Mx-rVy"/>
                             <constraint firstItem="e7l-SV-Vjj" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" constant="10" id="cDI-So-Rdg"/>
-                            <constraint firstItem="fXv-Ol-yIU" firstAttribute="top" secondItem="e7l-SV-Vjj" secondAttribute="bottom" constant="27" id="gvk-FQ-CfW"/>
-                            <constraint firstItem="rak-oW-adO" firstAttribute="top" secondItem="fXv-Ol-yIU" secondAttribute="bottom" constant="20" id="iBz-Ct-44n"/>
+                            <constraint firstItem="Hr0-iz-Jmm" firstAttribute="top" secondItem="e7l-SV-Vjj" secondAttribute="bottom" constant="10" id="ehO-md-RJN"/>
+                            <constraint firstItem="vDp-Og-TSd" firstAttribute="centerY" secondItem="XL6-qI-t6d" secondAttribute="centerY" id="fdP-0A-Wfi"/>
                             <constraint firstItem="rak-oW-adO" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" id="l68-7R-0H2"/>
+                            <constraint firstItem="cFA-G0-n6R" firstAttribute="trailing" secondItem="Hr0-iz-Jmm" secondAttribute="trailing" constant="5" id="nFr-yw-lsY"/>
                             <constraint firstItem="e7l-SV-Vjj" firstAttribute="top" secondItem="cFA-G0-n6R" secondAttribute="top" constant="10" id="oGg-f0-L3q"/>
+                            <constraint firstItem="rak-oW-adO" firstAttribute="top" secondItem="Hr0-iz-Jmm" secondAttribute="bottom" constant="27" id="pad-ZS-GRx"/>
+                            <constraint firstItem="Hr0-iz-Jmm" firstAttribute="leading" secondItem="cFA-G0-n6R" secondAttribute="leading" constant="5" id="yLx-eo-7rY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="displayMsgLbl" destination="Hr0-iz-Jmm" id="1sn-nc-X3L"/>
                         <outlet property="mainView" destination="Ipu-55-qUH" id="WXb-mt-MnS"/>
+                        <outlet property="microphoneBtn" destination="vDp-Og-TSd" id="TDc-bE-zgd"/>
                         <outlet property="searchBtn" destination="mND-XK-CQA" id="Xlm-hp-Dgz"/>
                         <outlet property="searchTextField" destination="XL6-qI-t6d" id="48n-hC-wO0"/>
-                        <outlet property="startStopBtn" destination="fXv-Ol-yIU" id="RrS-eQ-XUH"/>
                         <outlet property="webView" destination="rak-oW-adO" id="BdB-xc-0uR"/>
                     </connections>
                 </viewController>
@@ -297,6 +306,7 @@
     </scenes>
     <resources>
         <image name="AudioApp" width="800" height="600"/>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="waveform.and.mic" catalog="system" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
